@@ -1,41 +1,51 @@
-import React from "react";
-import { ChevronRight } from "lucide-react";
+import bgImage from "../assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section className="pt-24 pb-16 bg-gradient-to-br from-green-50 to-white">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          <div className="w-20 h-20 bg-green-600 rounded-2xl flex items-center justify-center text-white font-bold text-3xl mb-6 shadow-lg">
+    <section id="home"
+      className="relative py-24 md:py-28 text-white"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-green-900/70"></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 bg-green-200/20 px-4 py-2 rounded-full mb-6">
+          <span className="bg-green-700 text-white font-semibold px-2 py-1 rounded text-xs">
             FJF
-          </div>
-          <p className="text-green-600 font-medium mb-4">
-            Family Joy Food - Food Products & Agricultural Land Leasing
-          </p>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Premium Nigerian Food & Agri Solutions
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">
-            Discover authentic yam and potato products made with traditional
-            methods, plus agricultural land leasing opportunities. From farm to
-            your table with love.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="#products"
-              className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition inline-flex items-center justify-center"
-            >
-              Shop Products
-              <ChevronRight className="w-5 h-5 ml-2" />
-            </a>
-            <a
-              href="#land-lease"
-              className="bg-white text-green-600 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition inline-flex items-center justify-center"
-            >
-              Lease Land
-              <ChevronRight className="w-5 h-5 ml-2" />
-            </a>
-          </div>
+          </span>
+          <span className="text-sm">
+            Family Joy Food – Food Products & Land Leasing
+          </span>
+        </div>
+
+        {/* Heading */}
+        <h1 className="text-4xl md:text-5xl font-bold mb-5">
+          Premium Nigerian <br />
+         Food & Agri Solutions
+        </h1>
+
+        {/* Description */}
+        <p className="text-base md:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto">
+          Discover authentic yam and potato products made with traditional methods, plus agricultural land leasing opportunities. From farm to your table with love.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex justify-center gap-4">
+          <button className="bg-green-800 hover:bg-green-900 px-6 py-3 rounded-md text-sm md:text-base font-medium transition">
+            Shop Products →
+          </button>
+
+          <button className="border border-white px-6 py-3 rounded-md text-sm md:text-base font-medium hover:bg-white/10 transition">
+            Lease Land
+          </button>
         </div>
       </div>
     </section>
@@ -43,3 +53,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+            <div className="w-10 h-10 bg-green-700 rounded-lg flex items-center justify-center text-white font-bold text-lg">
               FJF
             </div>
             <span className="font-semibold text-gray-900 hidden sm:block">
@@ -22,37 +22,37 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#home"
-              className="text-gray-700 hover:text-green-600 transition"
+              className="text-gray-700 hover:text-green-700 transition"
             >
               Home
             </a>
             <a
               href="#products"
-              className="text-gray-700 hover:text-green-600 transition"
+              className="text-gray-700 hover:text-green-700 transition"
             >
               Products
             </a>
             <a
               href="#nutrition"
-              className="text-gray-700 hover:text-green-600 transition"
+              className="text-gray-700 hover:text-green-700 transition"
             >
               Nutrition & Benefits
             </a>
             <a
               href="#gallery"
-              className="text-gray-700 hover:text-green-600 transition"
+              className="text-gray-700 hover:text-green-700 transition"
             >
               Gallery
             </a>
             <a
               href="#land-lease"
-              className="text-gray-700 hover:text-green-600 transition"
+              className="text-gray-700 hover:text-green-700 transition"
             >
               Land Leasing
             </a>
             <a
               href="#investors"
-              className="text-gray-700 hover:text-green-600 transition"
+              className="text-gray-700 hover:text-green-700 transition"
             >
               Investors
             </a>
@@ -93,7 +93,7 @@ const Header = () => {
               Nutrition & Benefits
             </a>
             <a
-              href="#gallery"
+              href="#home"
               className="block text-gray-700 hover:text-green-600 transition"
             >
               Gallery
@@ -105,7 +105,7 @@ const Header = () => {
               Land Leasing
             </a>
             <a
-              href="#investors"
+              href="#land-lease"
               className="block text-gray-700 hover:text-green-600 transition"
             >
               Investors

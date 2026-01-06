@@ -2,10 +2,10 @@ import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
-import OrderCTA from "./components/OrderCta";
-import Products from "./components/Products";
+import Products from "./pages/Products";
 import LandLeasing from "./components/LandLeasing";
 import Footer from "./components/Footer";
+import AllProducts from "./pages/AllProducts";
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
       <Header />
       <Hero />
       <Features />
-      <OrderCTA />
       <Products />
+      <AllProducts/>
       <LandLeasing />
       <Footer />
     </div>
